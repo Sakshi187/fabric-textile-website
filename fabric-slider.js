@@ -1,11 +1,15 @@
+// Fabric slider to change image 
 (function () {
+  
   const fabric_slides = document.querySelectorAll('.fabric-slide');
+  
   let fabric_currentIndex = 0;
 
  
   fabric_slides.forEach((img, index) => {
     img.style.display = index === 0 ? 'block' : 'none';
   });
+
 
   setInterval(() => {
     
